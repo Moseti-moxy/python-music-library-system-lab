@@ -41,20 +41,3 @@ class Song:
         cls.artists_count[artist] = cls.artists_count.get(artist, 0) + 1
 
 
-# ── Quick demo / smoke-test ────────────────────────────────────────────────────
-if __name__ == "__main__":
-    # Create some song objects
-    s1 = Song("Halo", "Beyonce", "R&B")
-    s2 = Song("99 Problems", "Jay-Z", "Rap")
-    s3 = Song("Crazy in Love", "Beyonce", "R&B")
-    s4 = Song("HUMBLE.", "Kendrick Lamar", "Rap")
-    s5 = Song("Hotel California", "Eagles", "Rock")
-    s6 = Song("Lemonade", "Beyonce", "R&B")
-
-    print("=" * 45)
-    print(f"Total songs : {Song.count}")
-    print(f"Unique genres : {list(Song.genre_count.keys())}")
-    print(f"Unique artists : {list(Song.artists_count.keys())}")
-    print(f"Songs per genre : {Song.genre_count}")
-    print(f"Songs per artist: {Song.artists_count}")
-    print("=" * 45)
